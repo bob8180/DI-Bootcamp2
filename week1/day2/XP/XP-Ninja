@@ -1,0 +1,30 @@
+import math
+
+C = 50
+H = 30
+
+input_str = input("Enter comma-separated numbers: ")
+numbers = input_str.split(',')
+
+results = []
+for d in numbers:
+    try:
+        D = int(d.strip())
+        Q = round(math.sqrt((2 * C * D) / H))
+        results.append(str(Q))
+    except ValueError:
+        results.append("Invalid")
+
+# print(results)
+print(",".join(results))
+#separator.join(iterable)
+"""
+# separator:
+# This is the string that will be inserted between each element of the iterable when 
+# they are joined. It can be any string, including an empty string (''), a space (' '), a 
+# comma and space (', '), or any other desired character sequence.
+
+# iterable:
+# This is the collection of string elements that you want to join. It can be a list of 
+# strings, a tuple of strings, or any other iterable containing string elements.
+"""

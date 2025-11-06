@@ -1,0 +1,15 @@
+def country_info(country_name = 'Naboo'):
+    
+    if country_name == 'Naboo':
+        country_info = 'Theed' 
+    else:
+        country_info = 'Not Found'
+
+    return country_info
+
+print(country_info('Naboo'))
+
+def current_age():
+    age = 20
+    return age
+print(current_age())
