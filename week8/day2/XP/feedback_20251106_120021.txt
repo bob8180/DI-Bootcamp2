@@ -1,0 +1,11 @@
+URL: https://github.com/bob8180/DI-Bootcamp2/blob/main/week8/day2/XP/MPw8d2.ipynb
+suggestions for improvement:
+- The code should include the steps to identify the elements containing the hosting plan details, extract the data (plan names, features, pricing), store the data in a structured format (e.g., list of dictionaries), and save the data (e.g., to a CSV file).
+- Include error handling (e.g., try-except blocks) to gracefully handle potential issues during scraping, such as elements not being found or network errors.
+- Close the Selenium WebDriver (driver.quit()) after finishing the scraping task to release resources.
+Brief justification:
+- correctness: The code initializes Selenium, loads the webpage, and creates a BeautifulSoup object. It addresses the first two bullet points in the 'Task' section ('Initialize Selenium WebDriver' and 'Load the Web Page'). However, it is missing the crucial steps of identifying and extracting the data, storing it, and saving it, and the closing of the driver which reduces the score. Hence, it only partially fulfills the requirements.
+- readability: The code is reasonably readable with clear variable names and comments explaining each step. The use of a headless browser is a good practice.
+- performance: The performance seems acceptable, using headless mode improves performance. However, further optimization might be needed depending on the size of the page and the number of elements to be scraped.
+- security: The code includes `--no-sandbox` and `--disable-dev-shm-usage` arguments, which are often used to work around issues in containerized environments, but they can potentially reduce security. The scraping process itself doesn't inherently introduce major security risks, but it's important to be mindful of the data being scraped and how it's used.
+
