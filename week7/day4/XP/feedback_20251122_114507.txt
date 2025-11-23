@@ -1,0 +1,10 @@
+URL: https://github.com/bob8180/DI-Bootcamp2/blob/main/week7/day4/XP/XPw7d4.py
+suggestions for improvement:
+- The code attempts all exercises, but the first exercise isn't fully implemented, failing to create the calculator layout. Exercise 2 and 3 requires an additional data file.
+- Exercise 4 needs to generate the described chart and write data in Excel file.
+Brief justification:
+- correctness: The code attempts all exercises. Exercise 1 partially addresses the prompt by creating and saving an Excel file and adding data, but it doesn't fully implement the specified calculator layout. Exercise 2, Exercise 3, and Exercise 4 imports the libraries and load the data, but the plots chart is not generated and written to the Excel file.
+- readability: The code is generally readable, with comments explaining each major step. However, the code could be better organized by separating each exercise into its own function or file.
+- performance: The code's performance is adequate for the given tasks. However, loading and saving the Excel file multiple times in Exercise 3 is inefficient.
+- security: The code does not appear to have any major security vulnerabilities. However, it's good practice to avoid hardcoding file paths and to validate user inputs.
+
